@@ -25,29 +25,29 @@ h1
 }
 .accordion-item
 {
-  background-color: #fff;
   color: #111;
-  margin: 1rem 0;
+  background: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+  margin: 1rem 0;
 }
 .accordion-item-header
 {
-  padding: 0.5rem 3rem 0.5rem 1rem;
+  position: relative;
   min-height: 3.5rem;
-  line-height: 1.25rem;
-  font-weight: bold;
   display: flex;
   align-items: center;
-  position: relative;
+  font-weight: bold;
+  line-height: 1.25rem;
+  padding: 0.5rem 3rem 0.5rem 1rem;
   cursor: pointer;
 }
 .accordion-item-header::after
 {
-  content: "\002B";
-  font-size: 2rem;
   position: absolute;
+  content: "\002B";
   right: 1rem;
+  font-size: 2rem;
 }
 .accordion-item-header.active::after
 {
@@ -61,10 +61,10 @@ h1
 }
 .accordion-item-body-content
 {
-  padding: 1rem;
   line-height: 1.5rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+  padding: 1rem;
 }
 
 @media(max-width:767px)
